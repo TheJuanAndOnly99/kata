@@ -1,4 +1,12 @@
-const num = 8
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+let size = 0;
+
+readline.question('input a password length ', size => {
+  const num = size
 
 // create an array with each number from 1 to num
 const numbers = [];
@@ -21,3 +29,5 @@ function generatePassword(length) {
 }
 
 console.log(generatePassword(length));
+  readline.close();
+});
