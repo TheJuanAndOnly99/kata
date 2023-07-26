@@ -3,8 +3,6 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
-let size = 0;
-
 readline.question('input a password length ', size => {
   const num = size
 
